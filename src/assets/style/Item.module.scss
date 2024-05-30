@@ -1,0 +1,35 @@
+.editButtons {
+    transition: all .15s;
+    transform: translateX(-30%);
+    opacity: 0;
+
+    &.visible {
+        opacity: 1;
+        transition-delay: .1s;
+        transform: translateX(0%);
+    }
+
+    &:not(.visible) {
+        pointer-events: none;
+    }
+}
+
+.edit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.editIcon {
+    stroke: #000;
+    transition: all .15s;
+
+    &:hover {
+        stroke: #949494;
+    }
+}
+
+.input {
+    height: 20px;
+    margin-block: auto;
+}
